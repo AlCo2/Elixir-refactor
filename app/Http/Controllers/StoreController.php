@@ -9,6 +9,6 @@ class StoreController extends Controller
 {
     public function index(Request $request) {
         
-        return Inertia::render("store/Index");
+        return Inertia::render("home/Index");
     }
 }

@@ -1,4 +1,6 @@
 import NavbarLayout from "@/layouts/navbar-layout";
+import ServiceIntro from "./ServiceIntro";
+import { Box, Check, ShoppingBasket, ShoppingCart } from "lucide-react";
 
 
 
@@ -27,6 +29,11 @@ export default function Index() {
                 <div className="max-sm:hidden">
                     <img src="/assets/intro.webp" width={450} alt="" />
                 </div>
+            </div>
+            <div className="flex justify-center px-20">
+                <ServiceIntro icon={<Check className="size-10" />} title='Original Authentie' description='it is our policy to provide original authentic fragrances to our costumers and community' />
+                <ServiceIntro icon={<Box className="size-10" />} title='Brand New Product' description='We will not provide any second fragrances all our fragrances are sent directly from the companies' />
+                <ServiceIntro icon={<ShoppingCart className="size-10" />} title='Fast Shipping' description='You have the right to use our fragrances as fast as possible and we will make sure you have your right' />
             </div>
         </NavbarLayout>
     )
